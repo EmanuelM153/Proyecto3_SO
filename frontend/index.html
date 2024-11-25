@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="login-container">
+    <h2>Iniciar Sesión / Registrarse</h2>
+    <input type="text" id="username" placeholder="Nombre de usuario">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button id="login-btn">Iniciar Sesión</button>
+    <button id="register-btn">Registrarse</button>
+    <p id="login-error" class="error"></p>
+  </div>
+
+  <div id="chat-container" style="display: none;">
+    <h2>Bienvenido, <span id="current-user"></span></h2>
+    <div id="contacts">
+      <h3>Contactos</h3>
+      <ul id="contact-list"></ul>
+    </div>
+    <div id="chat">
+      <div id="messages"></div>
+      <input type="text" id="message-input" placeholder="Escribe un mensaje...">
+      <button id="send-btn">Enviar</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
